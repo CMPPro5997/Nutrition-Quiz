@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🥗 Nutrition Quiz</h1>
+    </header>
+
+    <main>
+
+        <!-- =========================
+             Instructions Screen
+        ========================== -->
+
+        <section id="instructions">
+
+            <h2>How to Play</h2>
+
+            <p>
+                Answer each nutrition question and click
+                <strong>Next</strong> to move through the quiz.
+            </p>
+
+            <button id="start-btn">
+                Start Quiz
+            </button>
+
+        </section>
+        <!-- =========================
+             Quiz Screen
+        ========================== -->
+
+        <section id="quiz-container" style="display: none;">
+
+            <!-- Question -->
+            <h2 id="question">
+                Question appears here
+            </h2>
+
+            <!-- Answer Options -->
+            <div id="options">
+
+                <!-- JavaScript will insert radio buttons here -->
+
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="buttons">
+
+                <button id="previous-btn">
+                    Previous
+                </button>
+
+                <button id="next-btn">
+                    Next
+                </button>
+
+            </div>
+
+        </section>
+
+<section id="results-container" style="display:none;">
+
+    <h2>Quiz Complete!</h2>
+
+    <p id="score"></p>
+
+    <button id="restart-btn">
+        Restart Quiz
+    </button>
+
+</section>
+<script src="./script.js"></script>
+</body>
